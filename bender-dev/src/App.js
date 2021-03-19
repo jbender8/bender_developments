@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import './App.css';
+import { Dropdown , Menu} from 'semantic-ui-react'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,18 +10,15 @@ import Typography from '@material-ui/core/Typography';
 import Reachme from './contact';
 import HomeWindow from "./homepage";
 import Aboutme from './About';
-import Portfoliosios from './portfolioios';
-import PortfoliosReact from './PortfoliosReact';
-import PortfolioCus from './PortfolioCustom';
-import PortfolioAnd from './Portfolioandroid';
-import PortfolioAng from './PortfolioAngular';
-import PortfolioSP from './PortfolioSharePoint';
-
-
+import Research from './Researchhome';
+import Main from './mainPortolio';
 
 
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    color: 'white',
+  },
   content: {
     flexGrow: 1,
     transition: theme.transitions.create('margin', {
@@ -78,14 +76,16 @@ export default function App() {
     setValue(newValue);
   };
   const [value, setValue] = React.useState(0);
-
+  const classes = useStyles();
   return (
-    <div>
-      <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+    <div className={classes.root}>
+      <Tabs value={value} onChange={handleChange} aria-label="Tabs">
           <Tab label="Home" {...a11yProps(0)} />
           <Tab label="About" {...a11yProps(1)} />
           <Tab label="Contact Me" {...a11yProps(2)} />
+          
           <Tab label="Portfolio"{...a11yProps(3)} />
+          <Tab label="Papers & Research "{...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Home/>
@@ -97,8 +97,12 @@ export default function App() {
         <Contactme/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Portfolioios/>
+        <PortfolioMain/>
       </TabPanel>
+      <TabPanel value={value} index={4}>
+        <Papers/>
+      </TabPanel>
+      
     </div>
   );
 }
@@ -145,65 +149,27 @@ function About(){
   );
 }
 
-function Portfolioios(){
+function PortfolioMain(){
   const classes = useStyles();
   return (
     <div>
-      <Portfoliosios classes={classes}/>
+      <Main/>
       <Footer/>
     </div>
   );
 }
 
-function PortfolioReact(){
+
+function Papers(){
   const classes = useStyles();
   return (
     <div>
-      <PortfoliosReact classes={classes}/>
+      <Research classes={classes}/>
       <Footer/>
     </div>
   );
 }
 
-function PortfolioCustom(){
-  const classes = useStyles();
-  return (
-    <div>
-      <PortfolioCus classes={classes}/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Portfolioandroid(){
-  const classes = useStyles();
-  return (
-    <div>
-      <PortfolioAnd classes={classes}/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Portfolioangular(){
-  const classes = useStyles();
-  return (
-    <div>
-      <PortfolioAng classes={classes}/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Portfoliosp(){
-  const classes = useStyles();
-  return (
-    <div>
-      <PortfolioSP classes={classes}/>
-      <Footer/>
-    </div>
-  );
-}
 
 
 

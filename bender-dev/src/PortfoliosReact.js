@@ -18,6 +18,7 @@ class PortfolioReact extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <Typography variant='h2'>Bender Developments</Typography>
+                    <Typography variant='h3'>React Websites</Typography>
                 </header>
             </div>
         </main>);

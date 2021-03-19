@@ -18,6 +18,7 @@ class Contact extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <Typography variant='h2'>Bender Developments</Typography>
+                    <Typography variant='h3'>Contact Me</Typography>
                 </header>
             </div>
         </main>);

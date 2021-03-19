@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-class PortfolioCustom extends React.Component {
+class Android extends React.Component {
     constructor(props) {
 
         super(props);
@@ -18,7 +18,7 @@ class PortfolioCustom extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <Typography variant='h2'>Bender Developments</Typography>
-                    <Typography variant='h3'>Custom HTML, CSS, & JavaScpript</Typography>
+                    <Typography variant='h3'>React Native Applications</Typography>
                 </header>
             </div>
         </main>);
@@ -26,5 +26,5 @@ class PortfolioCustom extends React.Component {
 }
 
 export default function homepage(props) {
-    return (<PortfolioCustom classes={props.classes} />);
+    return (<Android classes={props.classes} />);
 }

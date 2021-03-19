@@ -1,5 +1,5 @@
 import school from './grad.jpg';
-import discover from './discover.png'
+import work from './work.png'
 import cap from './br.jpg'
 import './App.css';
 import Typography from '@material-ui/core/Typography';
@@ -20,50 +20,38 @@ class About extends React.Component {
         const { classes } = this.state;
         return (<main className={classes.content}>
             <div className="App">
-                <header className="App-header">
-                    
-                    <Typography variant='h2'>About Me</Typography>
-                    <Typography variant='h4'>Jessica Bender</Typography>
+                <body className="App-body">
+                <br/><br/><br/>
+                <Typography variant='h2'>About Jessica Bender</Typography>
                     <hr style={{width: 1415}}/>
                     <div className="about">
-                        <Grid container item xs={12} spacing={3}>
-                            <Grid item xs={4}>
-                                <Typography variant='h5' color="primary">Schooling</Typography>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Typography variant='h5' color="primary">Work</Typography>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Typography variant='h5' color="primary">Fun Facts</Typography>
-                            </Grid>
-                        </Grid>
-                        <Grid container item xs={12} spacing={3}>
-                            <Grid item xs={4}>
-                                <Typography variant='h6'>
-                                    DePaul U 
-                                    Bachorlors of Science in Computer Science
-                                    Class of 2020
-                                    <br/>
-                                    <img src={school} className="grad-photo" alt="Jessica at DePaul 2020 Graduation" />
-                            </Typography>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Typography variant='h6'>
-                                    Discover F S
-                                    <br/>
-                                    <img src={discover} className="discover-photo" alt="Jessica at DePaul 2020 Graduation" />
-                            </Typography>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Typography variant='h6'>
-                                    Hi
-                                    <br/>
-                                    <img src={cap} className="cap-photo" alt="Jessica at DePaul 2020 Graduation" />
-                            </Typography>
-                            </Grid>
-                        </Grid>
+                        <div className="grad">
+                            <img src={school} className="grad-photo" alt="Jessica at DePaul 2020 Graduation" />
+                        </div>
+                        <div className="intro">
+                        <p className="hello">
+                            Hello! My name is Jessica Bender! I am a software developer. I Graduated from 
+                            DePaul University in 2020 with a Bacholors of Science in Computer Science. I also got two 
+                            minors in Photography and Grapic Design. 
+                            I am currently persuing my Masters of Science in Software Engineer from DePaul Univesity.
+                        </p>
+                        </div>
+                        <br/><br/>
                     </div>
-                </header>
+                    <div className="about">
+                        <div className="intro">
+                            <h3>Work</h3>
+                            <p className="hello">
+                                Hello! My name is Jessica Bender! I am a software developer. I Graduated from 
+                                DePaul University in 2020 with a Bacholors of Science in Computer Science. I also got two 
+                                minors in Photography and Grapic Design. 
+                                I am currently persuing my Masters of Science in Software Engineer from DePaul Univesity.
+                            </p>
+                        </div>
+                        <br/><br/>
+                    </div>
+                    <img src={cap} className="cap-photo" alt="Jessica at DePaul 2020 Graduation" />
+                </body>
             </div>
         </main>);
     }

@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-class PortfolioCustom extends React.Component {
+class Research extends React.Component {
     constructor(props) {
 
         super(props);
@@ -18,7 +18,8 @@ class PortfolioCustom extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <Typography variant='h2'>Bender Developments</Typography>
-                    <Typography variant='h3'>Custom HTML, CSS, & JavaScpript</Typography>
+                    <Typography variant='h3'>Research</Typography>
+
                 </header>
             </div>
         </main>);
@@ -26,5 +27,5 @@ class PortfolioCustom extends React.Component {
 }
 
 export default function homepage(props) {
-    return (<PortfolioCustom classes={props.classes} />);
+    return (<Research classes={props.classes} />);
 }
