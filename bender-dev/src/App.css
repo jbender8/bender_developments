@@ -54,8 +54,29 @@
   justify-content: center;
 }
 
+.Contact-title{
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle{
+  color:lightcoral;
+}
+
 .hello{
   padding-left: 20px;
+}
+
+.Available{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avail{
+  border-color: lightcoral;
+  border-style: groove;
+  padding: 50px;
 }
 
 
