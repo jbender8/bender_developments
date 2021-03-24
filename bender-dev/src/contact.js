@@ -4,10 +4,7 @@ import React from "react";
 import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
 import Alert from '@material-ui/lab/Alert';
-import * as emailjs from 'emailjs-com'
-
-
-
+import * as emailjs from 'emailjs-com';
 
 class Contact extends React.Component {
     
@@ -95,56 +92,60 @@ class Contact extends React.Component {
 
                     </div>
                     <div className="form">
-                    {error ? <Alert severity="error">Name , Email or Message Cannot be left blank</Alert>
+                    {error ? <Alert severity="error">Name , Email or Message cannot be left blank</Alert>
                     : void 0}
                     {errortwo ? <Alert severity="error">Not a valid Email. Must cointain "@" and "." example@example.com</Alert>
                     : void 0}
                     {sent ? <Alert severity="success">
-                                    <p>Thanks {this.state.Name}, </p>
-                                    <p>Your message: {this.state.Message} </p>
-                                    <p>Your Retrun Email: {this.state.Email} </p>
+                                    <p>Thanks {this.state.Name}, Email sent successfully! </p>
                                     <p>Please allow 1-2 business days for a reply</p> 
                                     </Alert>: void 0}
                         <form>
+                            Name: 
                             <div className="formInput">
                                 <InputBase
                                     placeholder="Enter your Name"
                                     inputProps={{ 'aria-label': 'Enter your Name' }}
                                     value={Name}
                                     onChange={this.handleNameChange}
-                                    style={{ padding: "10px" }}
+                                    style={{ padding: "10px", width: "935px", fontFamily:"sans-serif", fontSize: "18px", color: "gray" }}
                                 />
                             </div>
+                            Email Address:
                             <div className="formInput">
                                 <InputBase
                                     placeholder="Enter your Email"
                                     inputProps={{ 'aria-label': 'Enter your Email' }}
                                     value={Email}
                                     onChange={this.handleEmailChange}
-                                    style={{ padding: "10px" }}
+                                    style={{ padding: "10px", width: "935px", fontFamily:"sans-serif", fontSize: "18px", color: "gray" }}
                                 />
                             </div>
-                            <div className="formInput" style={{ width: "400px"}}>
+                            Subject:
+                            <div className="formInput" style={{}}>
                                 <InputBase
                                     placeholder="Enter your Subject"
                                     inputProps={{ 'aria-label': 'Enter your Subject' }}
                                     value={Subject}
                                     onChange={this.handleSubjectChange}
-                                    style={{ padding: "10px", width: "400px"}}
+                                    style={{ padding: "10px", width: "935px", fontFamily:"sans-serif", fontSize: "18px", color: "gray"}}
                                 />
                             </div>
-                            <div className="formInput" style={{ width: "400px", height:"100px"}}>
-                                <InputBase
+                            Message:
+                            <div className="formInput" style={{marginBottom: "15px"}}>
+                                <textarea
                                     placeholder="Enter your Message"
                                     inputProps={{ 'aria-label': 'Enter your Message' }}
                                     value={Message}
                                     onChange={this.handleMessageChange}
-                                    style={{ padding: "10px", width: "400px", height:"100px" }}
+                                    style={{ padding: "10px", width: "935px", height: "150px", fontFamily:"sans-serif", fontSize: "18px", color: "GrayText", opacity:"40%"}}
                                 />
                             </div>
-                            <Button className="updateButton home" style={{ color: "white" }} onClick={this.handleSubmit}>
-                                SEND
-                            </Button>
+                            <div>
+                                <Button className="updateButton home" style={{ color: "white", padding: "10px", width: "120px", height: "40px" }} onClick={this.handleSubmit}>
+                                    SEND
+                                </Button>
+                            </div>
                         </form>
                     </div>
                 </div>

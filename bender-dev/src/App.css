@@ -1,7 +1,9 @@
 .App {
-  text-align: center;
   background-color: #282c34;
   height: inherit;
+  padding: 12px;
+  padding-bottom: 25px;
+
 }
 
 .App-logo {
@@ -58,6 +60,8 @@
 
 .Contact-title{
   padding-top: 80px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -83,7 +87,6 @@
 }
 .formInput{
   display: flex;
-  justify-content: center;
   background-color: white;
   border: 2px solid rgb(34, 62, 112);
   border-radius: 5px;
@@ -91,24 +94,25 @@
 .form{
   margin-top: 1%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 530px;
+  height: inherit;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-left: 140px;
+  padding-right: 140px;
 }
+
 form{
   display: block;
-  justify-content: center;
   height: inherit;
-  width: 220px;
 }
+
+
+
 .updateButton{
   background: linear-gradient(145deg, rgb(254, 127, 156) 30%, #FDA4BA);
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.3);
   font-family: "Raleway";
-
 }
-
 
 .App-link {
   color: #61dafb;
