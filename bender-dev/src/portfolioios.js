@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-class Portfolio extends React.Component {
+class Portfolioios extends React.Component {
     constructor(props) {
 
         super(props);
@@ -25,5 +25,5 @@ class Portfolio extends React.Component {
 }
 
 export default function homepage(props) {
-    return (<Portfolio classes={props.classes} />);
+    return (<Portfolioios classes={props.classes} />);
 }
