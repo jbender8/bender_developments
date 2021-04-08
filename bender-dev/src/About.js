@@ -21,9 +21,12 @@ class About extends React.Component {
         return (<main className={classes.content}>
             <div className="App">
                 <body className="App-body">
-                <br/><br/><br/>
-                <Typography variant='h2'>About Jessica Bender</Typography>
-                    <hr style={{width: 1415}}/>
+                    <div className="title">
+                        <Typography variant='h3'>
+                            About Jessica Bender
+                        </Typography>
+                        <hr style={{width: 1420}}/>
+                    </div>
                     <div className="about">
                         <div className="grad">
                             <img src={school} className="grad-photo" alt="Jessica at DePaul 2020 Graduation" />

@@ -3,7 +3,6 @@
   height: inherit;
   padding: 12px;
   padding-bottom: 25px;
-
 }
 
 .App-logo {
@@ -31,7 +30,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,10 +39,29 @@
   color: white;
 }
 
+.h2s{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h3s{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodies{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .App-body{
   background-color: #282c34;
   min-height: 100vh;
   height: inherit;
+  align-items: center;
+  justify-content: center;
 }
 .grad{
   flex-basis: 40%
@@ -58,7 +76,7 @@
   justify-content: center;
 }
 
-.Contact-title{
+.title{
   padding-top: 80px;
   display: flex;
   flex-direction: column;
