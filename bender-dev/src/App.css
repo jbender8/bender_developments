@@ -50,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color:#ffe78f;
 }
 .h4s{
   display: flex;
@@ -74,7 +75,7 @@
 }
 
 a{
-  color:#FDA4BA;
+  color:#a8df65;
 }
 
 .App-body{

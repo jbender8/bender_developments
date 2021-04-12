@@ -25,6 +25,20 @@ class ResearchDS extends React.Component {
                 </header>
                 <body>
                     <div className="h2s">
+                        <Typography variant='h4'>Overview</Typography>
+                    </div>
+                    <div className="bodies">
+                        <Typography variant='body1'>
+                            A distributed systems paper based off readings from Maarten van Steen and Andrew S. Tanenbaum’s Distributed Systems 
+                            and James F. Kurose and Keith W. Ross’ Computer Networking A Top-Down Approach. Assignments from Winter Quarter 
+                            2021 DePaul University from Professor Dr. Clark Elliott. Dives into concepts including, what is a distributed 
+                            system, middleware, Security with public Keys and Secret Keys, Blockchain, Networking, Threads, Sockets, 
+                            Severs, Clients and much more. The paper starts off with 20 main concepts learned from the class. Then 
+                            goes into depth on the different chapters within the books. And wraps up with information about the 
+                            assignments done in class including network labs and programing assignments.
+                        </Typography>
+                    </div>
+                    <div className="h2s">
                         <Typography variant='h4'>Table of Contents</Typography>
                     </div>
                     <div className="h3s">
@@ -494,6 +508,7 @@ class ResearchDS extends React.Component {
                             computers now have a distributed system.
                         </Typography>                       
                     </div>
+                    <br/><br/><br/>
                     <div className="h5s">
                         <Typography variant='h6'>1.1</Typography>
                     </div>
@@ -572,6 +587,127 @@ class ResearchDS extends React.Component {
                     <br/><br/><br/>
                     <div className="h5s">
                         <Typography variant='h6'>1.2</Typography>
+                    </div>
+                    <div className="bodies">
+                        <Typography variant='body1'>
+                            There are four goals to keep in mind when building a distributed system. A distributed system should have accessible resources, and not be noticeable that the resources are distributed over a network. Additionally, a distributed system should be open and scalable. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            Having a distributed system resources accessible allows for the distributed system to be more cost efficient. Communication between users also becomes easier in an accessible resourced distributed system. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Groupware</b> – A software that allows users to work together to edit and allows other remote communications
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            An example of an accessible resourced distributed system would be the internet. The internet allows us to easily share almost anything and is nearly accessible by everyone around the world. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            BitTorrent – A Peer-to-Peer network for file sharing. BitTorrent is another successful example of an accessible resourced distributed system. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                        Transparency – Find out information <a href="#Transparency">here</a>.
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            Uniform Resource Locator (URL) – an address used by websites to point to the location of a file. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            URLs are a good example of Location Transparency. They use generic naming conventions and do not give away the location of the files within the name. URLs are also good examples for Relocation Transparency as for you cannot tell by the naming if the file has been relocated in its lifetime.
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            Copy-Before-Use – updating data in a new file version rather than over writing the previous version. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            Open Distributed System – other systems are easily able to use and integrate resources from other systems. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            IDL – Interface Definition Language – Defines an interfaces services by looking at the Syntax. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            Interoperability – specifies a common standard for two systems from two difference manufacturers so that they can co-aside together. 
+                        </Typography>   
+                        <br/>
+                        <Typography variant='body1'>
+                            Portability – Ensures that application can be executed on different systems and still look and feel the same with out needing to make any modifications to the program.
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            An extensible distributed system is one that can easily be modified to add, remove, or replace components in the system.
+                        </Typography>   
+                        <br/>
+                        <Typography variant='body1'>
+                            When looking at caching in web browsers you should look at the storage, exemption, sharing, and refreshing. Storage refers to the location which data to be cached is being stored. Exemption looks at what data can be deleted when the cache has no space left. It is important to remove dead or useless data to free up space for new data. Sharing determines if the cache data is public or private. Refreshing confirms that the cache data is current and relevant. 
+                        </Typography>     
+                        <br/>
+                        <Typography variant='body1'>
+                            With the invention of the cloud, it makes it easier for people to use a tablet as a computer rather than a PC. This is because distributed systems are salable. 
+                        </Typography>
+                        <br/>
+                        <Typography variant='body1'>
+                            Size Scalability – there is no performance loss when we add users to the system.  
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            Geographical Scalability – Allows systems to be far apart but limits the noticeably to users that they are far away. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Administrative Scalability </b> – A system that runs several administrations but is still able to be managed. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Server</b> – Sends replies. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Synchronous Communication vs Asynchronous Communication </b>– Find out information <a href="#SynchronousCommunicationAsynchronousCommunication">here</a>.
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Client</b> – Send requests.
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Computational Grid</b> – A way to share equipment amongst other scientists. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Scaling Up</b> – Capacity improvement by generating more memory, updating computers and more. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Scaling Out</b>– Deploying more machines in attempt to expand the distributed system. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Partitioning and Distribution</b> – Another scaling technique that splits a component and spans the new smaller parts across the distributed system.
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Replication</b> – Helps solve problems with scalability performance in a distributed system. Replicating elements across the distributed system allows for more availability and lessons the load between distributed systems. Thus, giving a better high performance distributed system.  
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            <b>Catching</b> – A form of replication that is made based off the client. Whereas replication is a decision made off the owner. 
+                        </Typography>  
+                        <br/>
+                        <Typography variant='body1'>
+                            Since there a several copies of resources from both replication and catching it is hard for the distributed system to maintain consistency among the systems. 
+                        </Typography>  
+                    </div>
+                    <br/><br/><br/>
+                    <div className="h5s">
+                        <Typography variant='h6'>1.3</Typography>
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
@@ -710,20 +846,11 @@ class ResearchDS extends React.Component {
                             Synchronized Group – 
                         </Typography>                       
                     </div>
-                    <br/><br/><br/>
-                    <div className="h5s">
-                        <Typography variant='h6'>1.3</Typography>
-                    </div>
-                    <div className="bodies">
-                        <Typography variant='body1'>
-                        </Typography>  
-                        <br/>
-                        <Typography variant='body1'>
-                        </Typography>                       
-                    </div>
                     <div className="h4s">
                         <Typography variant='h5'>Chapter Two: </Typography>
                         <br/>
+                    </div>
+                    <div className="bodies">
                         <Typography variant='body1'>
                             Software Architectures – inform us how different software mechanisms 
                         </Typography>
@@ -731,7 +858,6 @@ class ResearchDS extends React.Component {
                         <Typography variant='body1'>
                             Work together and how they are arranged. 
                         </Typography>
-                        <br/>
                     </div>
                     <br/><br/><br/>
                     <div className="h5s">
@@ -764,7 +890,7 @@ class ResearchDS extends React.Component {
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Handle – An event is signaled by an operating system.  
+                            <b>Handle</b> – An event is signaled by an operating system.  
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
@@ -841,7 +967,7 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Wrapper –
+                            <b>Wrapper</b> –
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
@@ -1407,6 +1533,7 @@ class ResearchDS extends React.Component {
                             Managing overlay networks –
                         </Typography>                       
                     </div>
+                    <br/><br/><br/>
                     <div className="h4s">
                         <Typography variant='h5'>Chapter Six: </Typography>
                     </div>
