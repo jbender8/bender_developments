@@ -15,11 +15,21 @@ class PortfolioReact extends React.Component {
     render() {
         const { classes } = this.state;
         return (<main className={classes.content}>
+                https://jbender8.github.io/Web-Apps-Final/                
             <div className="App">
-                <header className="App-header">
-                    <Typography variant='h2'>Bender Developments</Typography>
-                    <Typography variant='h3'>React Websites</Typography>
-                </header>
+                <body className="App-body" style={{paddingLeft:"200px"}}>
+                    <div className="title">
+                        <Typography variant='h3'>
+                            React
+                        </Typography>
+                    </div>
+                    <div className="covid">
+                        <h5>
+                            Chicago COVID-19 Number Cruncher 
+                        </h5>
+                        <p><a href= "https://jbender8.github.io/Web-Apps-Final/ ">Check me out!</a></p>
+                    </div>
+                </body>
             </div>
         </main>);
     }

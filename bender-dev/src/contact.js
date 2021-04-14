@@ -80,16 +80,19 @@ class Contact extends React.Component {
         const {error, errortwo, sent, Name, Email, Message, Subject } = this.state;
         return (<main className={classes.content}>
             <div className="App">
-                <div className="App-body">
-                    <div className="Contact-title">
-                        <Typography variant='h3'>Contact Me</Typography>
-                        <Typography className="subtitle" variant='h6'>Fill in the form below to get in contact with me!</Typography>
+                <body className="App-body">
+                    <div className="title">
+                        <Typography variant='h3'>
+                            Contact Me
+                        </Typography>
+                        <Typography className="subtitle" variant='h6'>
+                            Fill in the form below to get in contact with me!
+                        </Typography>
                     </div>
                     <div className="Available">
                         <h4 className="avail">
                             Now Accepting Freelance Jobs for April 2021!
                         </h4>
-
                     </div>
                     <div className="form">
                     {error ? <Alert severity="error">Name , Email or Message cannot be left blank</Alert>
@@ -97,9 +100,9 @@ class Contact extends React.Component {
                     {errortwo ? <Alert severity="error">Not a valid Email. Must cointain "@" and "." example@example.com</Alert>
                     : void 0}
                     {sent ? <Alert severity="success">
-                                    <p>Thanks {this.state.Name}, Email sent successfully! </p>
-                                    <p>Please allow 1-2 business days for a reply</p> 
-                                    </Alert>: void 0}
+                                <p>Thanks {this.state.Name}, Email sent successfully! </p>
+                                <p>Please allow 1-2 business days for a reply</p> 
+                            </Alert>: void 0}
                         <form>
                             Name: 
                             <div className="formInput">
@@ -148,7 +151,7 @@ class Contact extends React.Component {
                             </div>
                         </form>
                     </div>
-                </div>
+                </body>
             </div>
         </main>);
     }

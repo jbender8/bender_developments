@@ -85,13 +85,13 @@ const useStyles = makeStyles((theme) => ({
             <div className={classes.root}>
                 <Tabs value={value} onChange={handleChange} aria-label="Tabs" orientation="vertical" variant="scrollable" className={classes.tabs}>
                     <Tab label="Featured" {...a11yProps(0)} />
-                    <Tab label="Data Structurs" {...a11yProps(1)} />
+                    <Tab label="Distributed Systems" {...a11yProps(1)} />
                 </Tabs>
                 <TabPanel value={value} index={0}>
                     <Featured/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <DataST/>
+                    <DistributedSystems/>
                 </TabPanel>
             </div>
         );
@@ -118,7 +118,7 @@ function Featured(){
     );
   }
 
-function DataST(){
+function DistributedSystems(){
     const classes = useStyles();
     return (
       <div>
