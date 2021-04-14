@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     overflow: "hidden",
     zIndex: -1,
+    backgroundColor: "#282c34",
   },
   footer: {
     color: 'white',
