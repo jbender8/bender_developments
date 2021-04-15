@@ -94,12 +94,7 @@ class Contact extends React.Component {
             this.state.userID
         )
         this.resetForm();
-        emailjs.sendForm('service_x94vfam', 'template_nwlu0f9', templateParams, this.state.userID)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+        
     }
 
     resetForm(){
