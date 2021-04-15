@@ -4,7 +4,7 @@ import React from "react";
 import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
 import Alert from '@material-ui/lab/Alert';
-import * as emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 class Contact extends React.Component {
     
@@ -13,6 +13,9 @@ class Contact extends React.Component {
         this.state = {
             Name: '',
             Email: '',
+            myEmail:'jbenderdevelopments@gmail.com',
+            userID: 'user_WPYkq1ThNtdLUQSaLxocH',
+            templateId: 'template_xrlfe6y',
             Subject: '',
             Message: '',
             classes: props.classes,
@@ -47,7 +50,7 @@ class Contact extends React.Component {
         });
     }
 
-    async handleSubmit() {
+    async handleSubmit(e) {
         if (this.state.Name !== '' && this.state.Email !== '' && this.state.Message !== "" && this.state.Email.includes("@") && this.state.Email.includes(".")) {
             this.setState({
                 sent: true,
@@ -74,7 +77,41 @@ class Contact extends React.Component {
                 errortwo: false
             });
         }
+        e.preventDefault()
+        const { Name, Email, Subject, Message } = this.state
+
+        let templateParams = {
+            from_name: Name,
+            reply_to: Email,
+            to_name: this.state.myEmail,
+            subject: Subject,
+            message: Message,
+           }
+        emailjs.send(
+            'service_x94vfam',
+            'template_nwlu0f9',
+            templateParams,
+            this.state.userID
+        )
+        this.resetForm();
+        emailjs.sendForm('service_x94vfam', 'template_nwlu0f9', templateParams, this.state.userID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     }
+
+    resetForm(){
+        this.setState({
+            Name: '',
+            Email: '',
+            Subject: '',
+            Message: ''
+        })
+
+    }
+    
     render() {
         const { classes } = this.state;
         const {error, errortwo, sent, Name, Email, Message, Subject } = this.state;
@@ -103,7 +140,7 @@ class Contact extends React.Component {
                                 <p>Thanks {this.state.Name}, Email sent successfully! </p>
                                 <p>Please allow 1-2 business days for a reply</p> 
                             </Alert>: void 0}
-                        <form>
+                        <form className="contact-form">
                             Name: 
                             <div className="formInput">
                                 <InputBase

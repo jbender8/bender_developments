@@ -7,8 +7,14 @@ import './App.css';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { makeStyles} from '@material-ui/core/styles';
-import DataStructurs from './ResearchDS'
-import Featuredr from './FeaturedResearch'
+import DataStructurs from './ResearchDS';
+import Featuredr from './FeaturedResearch';
+import IOSdevResearch from './iOSdevResearch';
+import ReactResearch from './ReactResearch';
+import AngularResearch from './AngularResearch';
+import TSvsJSResearch from './TSvsJSResearch';
+
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -86,12 +92,28 @@ const useStyles = makeStyles((theme) => ({
                 <Tabs value={value} onChange={handleChange} aria-label="Tabs" orientation="vertical" variant="scrollable" className={classes.tabs}>
                     <Tab label="Featured" {...a11yProps(0)} />
                     <Tab label="Distributed Systems" {...a11yProps(1)} />
+                    <Tab label="iOS Development" {...a11yProps(2)} />
+                    <Tab label="React" {...a11yProps(3)} />
+                    <Tab label="Angular" {...a11yProps(4)} />
+                    <Tab label="TypeScript vs JavaScript" {...a11yProps(5)} />
                 </Tabs>
                 <TabPanel value={value} index={0}>
                     <Featured/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <DistributedSystems/>
+                </TabPanel>
+                <TabPanel value={value} index={2}>
+                    <IOSdevre/>
+                </TabPanel>
+                <TabPanel value={value} index={3}>
+                    <Reactrs/>
+                </TabPanel>
+                <TabPanel value={value} index={4}>
+                    <Angular/>
+                </TabPanel>
+                <TabPanel value={value} index={5}>
+                    <TSvsJS/>
                 </TabPanel>
             </div>
         );
@@ -127,4 +149,40 @@ function DistributedSystems(){
       </div>
     );
   }
-  
+  function Angular(){
+    const classes = useStyles();
+    return (
+      <div>
+        <AngularResearch classes={classes}/>
+        <Footer/>
+      </div>
+    );
+  }
+
+  function Reactrs(){
+    const classes = useStyles();
+    return (
+      <div>
+        <ReactResearch classes={classes}/>
+        <Footer/>
+      </div>
+    );
+  }
+  function TSvsJS(){
+    const classes = useStyles();
+    return (
+      <div>
+        <TSvsJSResearch classes={classes}/>
+        <Footer/>
+      </div>
+    );
+  }
+  function IOSdevre(){
+    const classes = useStyles();
+    return (
+      <div>
+        <IOSdevResearch classes={classes}/>
+        <Footer/>
+      </div>
+    );
+  }

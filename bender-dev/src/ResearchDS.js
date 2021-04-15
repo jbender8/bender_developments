@@ -38,6 +38,7 @@ class ResearchDS extends React.Component {
                             assignments done in class including network labs and programing assignments.
                         </Typography>
                     </div>
+                    <br/><br/><br/>
                     <div className="h2s">
                         <Typography variant='h4'>Table of Contents</Typography>
                     </div>
