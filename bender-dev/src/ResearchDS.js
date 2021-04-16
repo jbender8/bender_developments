@@ -114,7 +114,7 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Transparent – makes the distributed system invisible to users. Users cannot tell that 
+                            <b>Transparent</b> – makes the distributed system invisible to users. Users cannot tell that 
                             resources are distributed among several computers. 
                         </Typography> 
                         <br/> 
@@ -124,21 +124,21 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'>
-                            Access Transparency – Conceals how data or resources are accessed.  Machine architectures 
+                            <b>Access Transparency</b> – Conceals how data or resources are accessed.  Machine architectures 
                             variances are hidden but are represented the same across different machines.
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'> 
-                            Location Transparency – Conceals the physical location of resources in a distributed system. 
+                            <b>Location Transparency</b> – Conceals the physical location of resources in a distributed system. 
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'> 
-                            Relocation Transparency – Conceals if a resource has been rearranged in the distributed system.
-                             This is significant in cloud computing. 
+                            <b>Relocation Transparency</b> – Conceals if a resource has been rearranged in the distributed system.
+                            This is significant in cloud computing. 
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'> 
-                            Migration Transparency – Conceals if a resource has traveled to a new location.
+                            <b>Migration Transparency</b> – Conceals if a resource has traveled to a new location.
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'>
@@ -149,16 +149,16 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'>
-                            Replication Transparency – Conceals the duplication of a resource. A resource is duplicated to 
+                            <b>Replication Transparency</b> – Conceals the duplication of a resource. A resource is duplicated to 
                             allow for more obtainable resources and to improve performance. 
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'>
-                            Concurrency Transparency – Conceals that a more than one user might be accessing the same resources. 
+                            <b>Concurrency Transparency</b> – Conceals that a more than one user might be accessing the same resources. 
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'>
-                            Failure Transparency – Conceals that part of the distributed system may have failed. 
+                            <b>Failure Transparency</b> – Conceals that part of the distributed system may have failed. 
                         </Typography> 
                         <br/> 
                         <Typography variant='body1'> 
@@ -174,14 +174,14 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Synchronous Communication – Many LANs are based on Synchronous Communication. Waits for a 
+                            <b>Synchronous Communication</b> – Many LANs are based on Synchronous Communication. Waits for a 
                             reply from the sever before the client can request again. The client will be blocked until 
                             a reply is sent back. 
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Asynchronous Communication – does not block the client while waiting for a reply from the
-                             server. The client continues to make requests while waiting for the sever to reply. 
+                            <b>Asynchronous Communication </b>– does not block the client while waiting for a reply from the
+                            server. The client continues to make requests while waiting for the sever to reply. 
                         </Typography>                         
                     </div>
                     <br/><br/><br/>
@@ -196,7 +196,7 @@ class ResearchDS extends React.Component {
                         </Typography>  
                         <br/> 
                         <Typography variant='body1'>
-                            ACID stands for Atomic, Consistent, Isolated, and Durable. Atomic refers to an indivisible 
+                            ACID stands for <b>Atomic</b>, <b>Consistent</b>, <b>Isolated</b>, and <b>Durable</b>. Atomic refers to an indivisible 
                             transaction that is not noticeable or invisible to users. Consistent confirms that a transaction’s 
                             system invariants are not violated. Isolated confirms that there are no interferences with concurrent 
                             transactions. Durable confirms that changes are permanent after a transaction is committed. 
@@ -252,11 +252,11 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            LANs – Stands for Local-area networks. 
+                            <b>LANs</b> – Stands for Local-area networks. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            WANs – Stands for Wide-area networks.
+                            <b>WANs</b> – Stands for Wide-area networks.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
@@ -385,12 +385,12 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Local-Area clusters – Computers connected though LANs. These typically offer a high bandwidth 
+                            <b>Local-Area clusters </b> – Computers connected though LANs. These typically offer a high bandwidth 
                             and a low latency. The cluster is owned by one organization. It is arranged into three tiers: 
                             Logical switch, application servers, and database system.
                         </Typography>
                         <Typography variant='body1'>
-                            Wide-Area clusters – Manges multiple data centers across the world. There can be multiple 
+                            <b>Wide-Area clusters </b> – Manges multiple data centers across the world. There can be multiple 
                             organization all using the same cluster. This can cause for a high latency. As cloud computing 
                             becomes more popular more companies are using Wide-Area clusters. Amazon and Google are two 
                             examples of cloud computing that use Wide-Area clusters.
@@ -413,36 +413,36 @@ class ResearchDS extends React.Component {
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Physical layer: Standardizes the way two computers are related as well 
+                            <b>Physical layer: </b> Standardizes the way two computers are related as well 
                             as how 0s and 1s are represented.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Data link layer: delivers tools for detecting and potentially correcting transmission 
+                            <b>Data link layer: </b> delivers tools for detecting and potentially correcting transmission 
                             errors, in addition to, protocols for keeping a sender and receiver on the same page.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Network layer: Holds the Protocols for handling congestion and for sending and 
+                            <b>Network layer: </b> Holds the Protocols for handling congestion and for sending and 
                             receiving messages over a computer network.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Transport layer: Holds the protocols for direct support applications that aid data 
+                            <b>Transport layer: </b> Holds the protocols for direct support applications that aid data 
                             streaming in real time or set up dependable communication.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Session layer: Supports multiple application sessions. 
+                            <b>Session layer: </b> Supports multiple application sessions. 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Presentation layer: Recommends a way to represent or interpret data independently 
+                            <b>Presentation layer: </b> Recommends a way to represent or interpret data independently 
                             of its hosts that communicating applications operate on.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Application layer: Includes every other protocols not listed in the other layers. 
+                            <b>Application layer: </b> Includes every other protocols not listed in the other layers. 
                             For example: email, file-transfer and web access.
                         </Typography>
                     </div>
@@ -482,24 +482,17 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                        </Typography>  
-                        <br/>
-                        <Typography variant='body1'>
-                        </Typography>                       
-                    </div>
-                    <div className="bodies">
-                        <Typography variant='body1'>
                             Before the invention of microprocessors and high-speed computer networks, computers operated 
                             separately and were rather expensive and quite massive compared to our modern-day computers. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Microprocessors – Processes logic and control in a small number of circuits or even a single 
+                            <b>Microprocessors </b> – Processes logic and control in a small number of circuits or even a single 
                             circuit. Another word for it could be a CPU. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Topology – How computer networks are laid out. Explains how computers are connected to each 
+                            <b>Topology </b> – How computer networks are laid out. Explains how computers are connected to each 
                             other. 
                         </Typography> 
                         <br/>
@@ -514,7 +507,7 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Distributed System – Find out information <a href="#DistributedSystem">here</a>. 
+                            <b>Distributed System </b> – Find out information <a href="#DistributedSystem">here</a>. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
@@ -525,12 +518,12 @@ class ResearchDS extends React.Component {
                         </Typography>       
                         <br/>
                         <Typography variant='body1'>
-                            Open Group – nodes can freely communicate because they are openly allowed to join the 
+                            <b>Open Group </b> – nodes can freely communicate because they are openly allowed to join the 
                             distributed system. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Closed Group – Invite only. Nodes are not able to freely enter or exit the distributed 
+                            <b>Closed Group </b> – Invite only. Nodes are not able to freely enter or exit the distributed 
                             system. They are only allowed to talk to the other nodes in the system.  
                         </Typography> 
                         <br/>
@@ -541,13 +534,13 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Overlay Networks – two types: Structured and Unstructured. Unstructured overlay is random 
+                            <b>Overlay Networks </b> – two types: Structured and Unstructured. Unstructured overlay is random 
                             whereas Structured overlay is organized in a logical ring or even a tree. However, both 
                             overlays are always allowing two nodes to communicate. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Peer-to-Peer Networks– preforms a commonly known overlay class. 
+                            <b>Peer-to-Peer Networks </b> – preforms a commonly known overlay class. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
@@ -558,28 +551,28 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Distribution Transparency – does not allow the user to see where data is being stored or 
+                            <b>Distribution Transparency </b> – does not allow the user to see where data is being stored or 
                             if it is being used to provide a better user experience. This is because to the user the 
                             way data is being handled is not important for their experience. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Middleware – Find out information <a href="#Middleware">here</a>.
+                            <b>Middleware </b> – Find out information <a href="#Middleware">here</a>.
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            RPC – Stands for Remote Procedure Call. Is a service that appears as if a function that 
+                            <b>RPC </b> – Stands for Remote Procedure Call. Is a service that appears as if a function that 
                             was executed by a remote computer was done on the user’s local computer. This is done 
                             though middleware.
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Atomic Transactions – Provides an all or nothing concept. Either the middleware 
+                            <b>Atomic Transactions </b> – Provides an all or nothing concept. Either the middleware 
                             invokes all the services, or it invokes none of them. 
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Web Services / Mashups – Many web services use parts of old code and mash them together 
+                            <b>Web Services / Mashups </b> – Many web services use parts of old code and mash them together 
                             to get the necessary product. With the use of middleware, web services are able to organize 
                             how their functions are generated to the users.
                         </Typography>                 
@@ -606,15 +599,15 @@ class ResearchDS extends React.Component {
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            BitTorrent – A Peer-to-Peer network for file sharing. BitTorrent is another successful example of an accessible resourced distributed system. 
+                            <b>BitTorrent </b>– A Peer-to-Peer network for file sharing. BitTorrent is another successful example of an accessible resourced distributed system. 
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                        Transparency – Find out information <a href="#Transparency">here</a>.
+                            <b>Transparency </b>– Find out information <a href="#Transparency">here</a>.
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            Uniform Resource Locator (URL) – an address used by websites to point to the location of a file. 
+                            <b>Uniform Resource Locator (URL) </b> – an address used by websites to point to the location of a file. 
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
@@ -622,23 +615,23 @@ class ResearchDS extends React.Component {
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            Copy-Before-Use – updating data in a new file version rather than over writing the previous version. 
+                            <b>Copy-Before-Use </b>– updating data in a new file version rather than over writing the previous version. 
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            Open Distributed System – other systems are easily able to use and integrate resources from other systems. 
+                            <b>Open Distributed System </b>– other systems are easily able to use and integrate resources from other systems. 
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            IDL – Interface Definition Language – Defines an interfaces services by looking at the Syntax. 
+                            <b>IDL – Interface Definition Language </b>– Defines an interfaces services by looking at the Syntax. 
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
-                            Interoperability – specifies a common standard for two systems from two difference manufacturers so that they can co-aside together. 
+                            <b>Interoperability </b>– specifies a common standard for two systems from two difference manufacturers so that they can co-aside together. 
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Portability – Ensures that application can be executed on different systems and still look and feel the same with out needing to make any modifications to the program.
+                            <b>Portability </b>– Ensures that application can be executed on different systems and still look and feel the same with out needing to make any modifications to the program.
                         </Typography>     
                         <br/>
                         <Typography variant='body1'>
@@ -654,11 +647,11 @@ class ResearchDS extends React.Component {
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Size Scalability – there is no performance loss when we add users to the system.  
+                            <b>Size Scalability </b>– there is no performance loss when we add users to the system.  
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Geographical Scalability – Allows systems to be far apart but limits the noticeably to users that they are far away. 
+                            <b>Geographical Scalability </b>– Allows systems to be far apart but limits the noticeably to users that they are far away. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
@@ -716,134 +709,134 @@ class ResearchDS extends React.Component {
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Distributed Computing – Can be separated into two subgroups: Cluster Computing and Grid Computing.  
+                            <b>Distributed Computing </b>– Can be separated into two subgroups: Cluster Computing and Grid Computing.  
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Cluster Computing – High-speed LANs that connect similar computers running on the same operating system.  
+                            <b>Cluster Computing </b> – High-speed LANs that connect similar computers running on the same operating system.  
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Grid Computing – A distributed system that might have different software, hardware or networks. 
+                            <b>Grid Computing </b>– A distributed system that might have different software, hardware or networks. 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Cloud Computing – Outsourcing grid computing.  
+                            <b>Cloud Computing </b>– Outsourcing grid computing.  
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            DSM system – Stands for distributed shared-Memory Multicomputer. This would allow systems take the memory 
+                            <b>DSM system </b>– Stands for distributed shared-Memory Multicomputer. This would allow systems take the memory 
                             from anther computer and access it as if it was its own memory. 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Single-System Image – 
+                            <b>Single-System Image </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Virtual Organization – 
+                            <b>Virtual Organization </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Service-Oriented Architecture – 
+                            <b>Service-Oriented Architecture </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            OGSA- Open Grid Services Architecture – 
+                            <b>OGSA- Open Grid Services Architecture </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Utility Computing – 
+                            <b>Utility Computing </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Distributed Transaction – 
+                            <b>Distributed Transaction </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Enterprise Application Integration- EAI – 
+                            <b>Enterprise Application Integration- EAI </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Remote Procedure Calls- RPCs – 
+                            <b>Remote Procedure Calls- RPCs </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Transactional RPC – 
+                            <b>Transactional RPC </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            ACID – Find out information <a href="#ACID">here</a>.
+                            <b>ACID </b>– Find out information <a href="#ACID">here</a>.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Nested Transaction – 
+                            <b>Nested Transaction </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            TP Monitor – Stands for transaction processing monitor. Handled distributed transactions by having applications core be the server level. It allowed applications to access more than one server. 
+                            <b>TP Monitor </b>– Stands for transaction processing monitor. Handled distributed transactions by having applications core be the server level. It allowed applications to access more than one server. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Remote Method Invocations - RMI – 
+                            <b>Remote Method Invocations - RMI </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Message-Oriented Middleware - MOM – 
+                            <b>Message-Oriented Middleware - MOM </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Publish/Subscribe – 
+                            <b>Publish/Subscribe </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Pervasive Systems – blends into our current environment naturally. There is no clear difference with systems and users as for they a blended together.  
+                            <b>Pervasive Systems </b>– blends into our current environment naturally. There is no clear difference with systems and users as for they a blended together.  
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Sensors – Picks up various behaviors from the user.
+                            <b>Sensors </b>– Picks up various behaviors from the user.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Actuators – Provides feedback and information to direct user’s behaviors.
+                            <b>Actuators </b>– Provides feedback and information to direct user’s behaviors.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Ubiquitous computing system – Follows 5 requirements: distribution, interaction, context awareness, 
+                            <b>Ubiquitous computing system </b>– Follows 5 requirements: distribution, interaction, context awareness, 
                             autonomy and intelligence. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Implicit Action – 
+                            <b>Implicit Action </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Shared Data Spaces – 
+                            <b>Shared Data Spaces </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Universal Plug and Play Protocol- UPnP – 
+                            <b>Universal Plug and Play Protocol- UPnP </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Disruption-Tolerant Networks – It is not guaranteed that two nodes are connected. Communicating between 
+                            <b>Disruption-Tolerant Networks </b>– It is not guaranteed that two nodes are connected. Communicating between 
                             two node may not be easy.  
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Pocket Switch Networks – 
+                            <b>Pocket Switch Networks </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Abstract Regions – 
+                            <b>Abstract Regions </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            In-network Data Processing – 
+                            <b>In-network Data Processing </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Synchronized Group – 
+                            <b>Synchronized Group </b>– 
                         </Typography>                       
                     </div>
                     <div className="h4s">
@@ -852,7 +845,7 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Software Architectures – inform us how different software mechanisms 
+                            <b>Software Architectures </b> – inform us how different software mechanisms 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
@@ -865,28 +858,28 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Architectural Style – Find out information <a href="#ArchitecturalStyle">here</a>.
+                            <b>Architectural Style </b>– Find out information <a href="#ArchitecturalStyle">here</a>.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Component – A modular device with precisely defined interfaces provided and required that can be replaced 
+                            <b>Component </b>– A modular device with precisely defined interfaces provided and required that can be replaced 
                             within its environment.
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Connector – Mechanism for mediating contact, communication, or collaboration between components
+                            <b>Connector </b>– Mechanism for mediating contact, communication, or collaboration between components
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Layered Fashion – 
+                            <b>Layered Fashion </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Downcall – 
+                            <b>Downcall </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Upcall – 
+                            <b>Upcall </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
@@ -894,71 +887,71 @@ class ResearchDS extends React.Component {
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Transmission Control Protocol (TCP) – 
+                            <b>Transmission Control Protocol (TCP) </b>– 
                         </Typography>                       
                         <br/>
                         <Typography variant='body1'>
-                            Connection-oriented Service – 
+                            <b>Connection-oriented Service </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Object-Based Architectures – 
+                            <b>Object-Based Architectures </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Skeleton – 
+                            <b>Skeleton </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Encapsulation – 
+                            <b>Encapsulation </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Service-Oriented Architectures – 
+                            <b>Service-Oriented Architectures </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Representational State Transfer (REST) – RESTful –
+                            <b>Representational State Transfer (REST) – RESTful </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Architectures –
+                            <b>Architectures </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Simple Storage Service –
+                            <b>Simple Storage Service </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Uniform Resource Identifier (URI) –
+                            <b>Uniform Resource Identifier (URI) </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            direct coordination – 
+                            <b>direct coordination </b>– 
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            mailbox coordination –
+                            <b>mailbox coordination </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            event-based coordination –
+                            <b>event-based coordination </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            tuples –
+                            <b>tuples </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            event bus –
+                            <b>event bus </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            based publish-subscribe systems –
+                            <b>based publish-subscribe systems </b>–
                         </Typography>
                         <br/>
                         <Typography variant='body1'>
-                            Content-based publish-subscribe systems –
+                            <b>Content-based publish-subscribe systems </b>–
                         </Typography>
                     </div>
                     <br/><br/><br/>
@@ -971,23 +964,23 @@ class ResearchDS extends React.Component {
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            object adapter –
+                            <b>object adapter </b>–
                         </Typography>    
                         <br/>
                         <Typography variant='body1'>
-                            message broker –
+                            <b>message broker </b>–
                         </Typography>    
                         <br/>
                         <Typography variant='body1'>
-                            interceptor –
+                            <b>interceptor </b>–
                         </Typography>    
                         <br/>
                         <Typography variant='body1'>
-                            request-level interceptor -
+                            <b>request-level interceptor </b>-
                         </Typography>    
                         <br/>
                         <Typography variant='body1'>
-                            message-level interceptor –
+                            <b>message-level interceptor </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -996,107 +989,107 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            system architecture –
+                            <b>system architecture </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            request-reply behavior –
+                            <b>request-reply behavior </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            idempotent –
+                            <b>idempotent </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            two-tiered architecture –
+                            <b>two-tiered architecture </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            three-tiered architecture –
+                            <b>three-tiered architecture </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            horizontal distribution –
+                            <b>horizontal distribution </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            peer-to-peer systems –
+                            <b>peer-to-peer systems </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            servant –
+                            <b>servant </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            distributed hash table –
+                            <b>distributed hash table </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            hypercube –
+                            <b>hypercube </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            random graph –
+                            <b>random graph </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            time-to-live –
+                            <b>time-to-live </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            random walk –
+                            <b>random walk </b>–
                         </Typography>                       
                         <br/>
                         <Typography variant='body1'>
-                            policy-based search methods –
+                            <b>policy-based search methods </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            content delivery network –
+                            <b>content delivery network </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            broker –
+                            <b>broker </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            super peers –
+                            <b>super peers </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            weak peer –
+                            <b>weak peer </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            leader-election problem –
+                            <b>leader-election problem </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            edge-server systems –
+                            <b>edge-server systems </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Internet Service Provider –
+                            <b>Internet Service Provider </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Fog Computing –
+                            <b>Fog Computing </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            BitTorrent –Find out information <a href="#BitTorrent">here</a>.
+                            <b>BitTorrent </b>–Find out information <a href="#BitTorrent">here</a>.
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Free Riding –
+                            <b>Free Riding </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            torrent file –
+                            <b>torrent file </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            magnet link –
+                            <b>magnet link </b>–
                         </Typography> 
                     </div>
                     <br/><br/><br/>
@@ -1105,59 +1098,59 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Network File System –Find out information <a href="#NetworkFileSystem">here</a>.
+                            <b>Network File System </b>–Find out information <a href="#NetworkFileSystem">here</a>.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            remote file service –
+                            <b>remote file service </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            remote access model –
+                            <b>remote access model </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            upload/download model –
+                            <b>upload/download model </b>–
                         </Typography>                       
                         <br/>
                         <Typography variant='body1'>
-                            Virtual File System –
+                            <b>Virtual File System </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            NFS client –
+                            <b>NFS client </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            remote procedure calls – RPCs –
+                            <b>remote procedure calls – RPCs </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            NFS server –
+                            <b>NFS server </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Uniform Resource Locator - URL – 
+                            <b>Uniform Resource Locator - URL </b>– 
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Browser – 
+                            <b>Browser </b>– 
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            HyperText Transfer Protocol – HTTP –
+                            <b>HyperText Transfer Protocol – HTTP </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            HyperText Markup Language – HTML –
+                            <b>HyperText Markup Language – HTML </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Common Gateway Interface –
+                            <b>Common Gateway Interface </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Server-side script – 
+                            <b>Server-side script </b>– 
                         </Typography>   
                     </div>
                     <div className="h4s">
@@ -1169,47 +1162,47 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Threads –Find out information <a href="#Threads">here</a>.
+                            <b>Threads </b>–Find out information <a href="#Threads">here</a>.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            virtual processors – 
+                            <b>virtual processors </b>– 
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            process table –
+                            <b>process table </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            processor context –
+                            <b>processor context </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Context switching –
+                            <b>Context switching </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Thread implementation –
+                            <b>Thread implementation </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Many-to-one threading model –
+                            <b>Many-to-one threading model </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            lightweight processes (LWP) –
+                            <b>lightweight processes (LWP) </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Multithreaded clients –
+                            <b>Multithreaded clients </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            thread-level parallelism (TLP) –
+                            <b>thread-level parallelism (TLP) </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Multithreaded servers –
+                            <b>Multithreaded servers </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -1218,71 +1211,71 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Principle of virtualization –
+                            <b>Principle of virtualization </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Types of virtualization –Find out information <a href="#Typesofvirtualization">here</a>.
+                            <b>Types of virtualization </b>–Find out information <a href="#Typesofvirtualization">here</a>.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Instruction set architecture (ISA) –
+                            <b>Instruction set architecture (ISA) </b>–
                         </Typography>                       
                         <br/>
                         <Typography variant='body1'>
-                            application programming interface (API) –
+                            <b>application programming interface (API) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            process virtual machine –
+                            <b>process virtual machine </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            native virtual machine monitor –
+                            <b>native virtual machine monitor </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            guest operating systems –
+                            <b>guest operating systems </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            hosted virtual machine monitor –
+                            <b>hosted virtual machine monitor </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            host operating system –
+                            <b>host operating system </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Nonprivileged instructions –
+                            <b>Nonprivileged instructions </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Infrastructure-as-a-Service (IaaS) – Basic infrastructure
+                            <b>Infrastructure-as-a-Service (IaaS) </b>– Basic infrastructure
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Platform-as-a-Service (PaaS) – system-level services
+                            <b>Platform-as-a-Service (PaaS) </b>– system-level services
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Software-as-a-Service (SaaS) – containing actual applications
+                            <b>Software-as-a-Service (SaaS) </b>– containing actual applications
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Amazon Elastic Compute Cloud (EC2)–
+                            <b>Amazon Elastic Compute Cloud (EC2) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Amazon Machine Images (AMIs) –
+                            <b>Amazon Machine Images (AMIs) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Network Address Translation (NAT) –
+                            <b> Network Address Translation (NAT) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Amazon’s Elastic Block Store (Amazon EBS) –
+                            <b>Amazon’s Elastic Block Store (Amazon EBS) </b>–
                         </Typography>  
                     </div>
                     <br/><br/><br/>
@@ -1291,19 +1284,19 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Clients –
+                            <b>Clients </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            X Window System –
+                            <b>X Window System </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Thin-client network computing – Find out information <a href="#ThinClientNetworkComputing">here</a>.
+                            <b>Thin-client network computing </b>– Find out information <a href="#ThinClientNetworkComputing">here</a>.
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Client-side software for distribution transparency –
+                            <b>Client-side software for distribution transparency </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -1312,59 +1305,59 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Servers –
+                            <b>Servers </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Superserver –
+                            <b>Superserver </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Daemon –
+                            <b>Daemon </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            session state and permanent state –
+                            <b>session state and permanent state </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Object servers –
+                            <b>Object servers </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Apache Portable Runtime (APR) –
+                            <b>Apache Portable Runtime (APR) </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Server clusters –Find out information <a href="#ServerClusters">here</a>.
+                            <b>Server clusters </b>–Find out information <a href="#ServerClusters">here</a>.
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Local-area clusters –
+                            <b>Local-area clusters </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            General organization –
+                            <b>General organization </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Request dispatching –
+                            <b>Request dispatching </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Wide-area clusters –
+                            <b>Wide-area clusters </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Redirection Policy –
+                            <b>Redirection Policy </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Domain Name System (DNS) –
+                            <b>Domain Name System (DNS) </b>–
                         </Typography>   
                         <br/>
                         <Typography variant='body1'>
-                            Slice Creation Service (SCS) –
+                            <b>Slice Creation Service (SCS) </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -1373,11 +1366,11 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Reasons for migrating code –
+                            <b>Reasons for migrating code </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Migration in heterogeneous systems – Find out information <a href="#HeterogeneousSystems">here</a>.
+                            <b>Migration in heterogeneous systems </b>– Find out information <a href="#HeterogeneousSystems">here</a>.
                         </Typography>                       
                     </div>
                     <div className="h4s">
@@ -1389,47 +1382,47 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Open Systems Interconnection Reference Model (ISO OSI)–
+                            <b>Open Systems Interconnection Reference Model (ISO OSI) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Seven OSI Layers: Find out information <a href="#SevenOSILayers">here</a>.
+                            <b>Seven OSI Layers</b>: Find out information <a href="#SevenOSILayers">here</a>.
                         </Typography>    
                         <br/>
                         <Typography variant='body1'>
-                            Lower-level protocols –
+                            <b>Lower-level protocols </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Transport protocols –
+                            <b>Transport protocols </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Transmission Control Protocol (TCP) –
+                            <b>Transmission Control Protocol (TCP) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Real-time Transport Protocol (RTP) –
+                            <b>Real-time Transport Protocol (RTP) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Higher-level protocols –
+                            <b>Higher-level protocols </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            File Transfer Protocol (FTP) –
+                            <b>File Transfer Protocol (FTP) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Middleware protocols –
+                            <b>Middleware protocols </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Domain Name System (DNS) –
+                            <b>Domain Name System (DNS) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Types of Communication –
+                            <b>Types of Communication </b>–
                         </Typography>                   
                     </div>
                     <br/><br/><br/>
@@ -1438,43 +1431,43 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Remote Procedure Call (RPC) –
+                            <b>Remote Procedure Call (RPC) </b>–
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Client stub –
+                            <b>Client stub </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Server stub –
+                            <b>Server stub </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            remote procedure call steps: Find out information <a href="#RPCSteps">here</a>.
+                            <b>remote procedure call steps</b>: Find out information <a href="#RPCSteps">here</a>.
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Parameter Marshaling –
+                            <b>Parameter Marshaling </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Remote Method Invocation (RMI) –
+                            <b>Remote Method Invocation (RMI) </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Variations on RPC –
+                            <b>Variations on RPC </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Asynchronous RPC –
+                            <b>Asynchronous RPC </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Multicast RPC –
+                            <b>Multicast RPC </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            DCE –
+                            <b>DCE </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
@@ -1493,7 +1486,7 @@ class ResearchDS extends React.Component {
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Binding a client to a server –
+                            <b>Binding a client to a server </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -1502,35 +1495,35 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Publish-subscribe pattern – 
+                            <b>Publish-subscribe pattern </b>– 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Pipeline pattern –
+                            <b>Pipeline pattern </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            The Message-Passing Interface (MPI) –
+                            <b>The Message-Passing Interface (MPI) </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Message-queuing systems –
+                            <b>Message-queuing systems </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Message brokers –
+                            <b>Message brokers </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Message transfer –
+                            <b>Message transfer </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Message Queue Interface (MQI) –
+                            <b>Message Queue Interface (MQI) </b>–
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Managing overlay networks –
+                            <b>Managing overlay networks </b>–
                         </Typography>                       
                     </div>
                     <br/><br/><br/>
@@ -1539,15 +1532,15 @@ class ResearchDS extends React.Component {
                     </div>
                     <div className="bodies">
                         <Typography variant='body1'>
-                            Process Synchronization – Ensures that each process is complete before moving forward. 
+                            <b>Process Synchronization </b>– Ensures that each process is complete before moving forward. 
                         </Typography>  
                         <br/>
                         <Typography variant='body1'>
-                            Data Synchronization – Data is the same in two sets.
+                            <b>Data Synchronization </b>– Data is the same in two sets.
                         </Typography> 
                         <br/>
                         <Typography variant='body1'>
-                            Coordination – controls the relationships and dependencies between activities in a distributed system.
+                            <b>Coordination </b>– controls the relationships and dependencies between activities in a distributed system.
                         </Typography>                       
                     </div>
                     <br/><br/>
